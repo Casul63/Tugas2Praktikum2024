@@ -21,3 +21,5 @@ Shift Baru: ___
 Contoh :
 ![Lampiran Form](form.png)
 ![Lampiran Hasil](hasil.png)
+
+## Penjelasan
