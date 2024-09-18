@@ -22,11 +22,6 @@ class TampilData extends StatelessWidget {
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
-        // child: Column(
-        //   children: [
-        //     Text("Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun"),
-        //   ],
-        // ),
         child: Center(
           child: Container(
             height: 300,
@@ -37,11 +32,21 @@ class TampilData extends StatelessWidget {
             ),
             padding: const EdgeInsets.all(20),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun",
-                  style: TextStyle(
-                    fontSize: 30,
+                const Icon(
+                  Icons.person,
+                  size: 100,
+                ),
+                RichText(
+                  textAlign: TextAlign.justify,
+                  text: TextSpan(
+                    text: "Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun",
+                    style: const TextStyle(
+                      fontSize: 25,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ],
